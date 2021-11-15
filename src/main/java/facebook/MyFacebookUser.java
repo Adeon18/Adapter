@@ -7,6 +7,10 @@ import java.util.Date;
 public class MyFacebookUser implements User {
     private FacebookUser adaptee;
 
+    public MyFacebookUser(FacebookUser adaptee) {
+        this.adaptee = adaptee;
+    }
+
     @Override
     public String getUserEmail() {
         return adaptee.getGetEmail();
